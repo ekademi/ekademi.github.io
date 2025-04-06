@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Портфолио абитуриента</title>
+
+<script src="Portfolio_DH_files/header-attrs-2.29/header-attrs.js"></script>
+<script src="Portfolio_DH_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="Portfolio_DH_files/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="Portfolio_DH_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="Portfolio_DH_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="Portfolio_DH_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="Portfolio_DH_files/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="Portfolio_DH_files/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="Portfolio_DH_files/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="Portfolio_DH_files/navigation-1.1/tabsets.js"></script>
+<link href="Portfolio_DH_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="Portfolio_DH_files/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Портфолио абитуриента</h1>
+
+</div>
+
+
+<style type="text/css">
+body {
+  background-image: linear-gradient(to right, #e6f2fa, #f0f8ff, #c3cfe2); /* Градиент */
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.justified-text {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+.section {
+  padding: 5px 0;
+}
+
+.section-title {
+  color: #2c3e50;
+  padding-bottom: 5px;
+}
+</style>
+<div style="text-align: right; font-size: 20px; font-style: italic; margin-top: 20px;">
+<em>Демидова Екатерина</em>
+</div>
+<div id="мотивационное-письмо" class="section level2 section-title">
+<h2 class="section-title">Мотивационное письмо</h2>
+<div class="section">
+<div class="justified-text">
+<p><em>«Цифровые методы — это не замена традиционной филологии, а ее
+естественное развитие. Моя цель — стать исследователем, который
+одинаково свободно владеет close reading и алгоритмами NLP, и программа
+ВШЭ предлагает именно такую траекторию»</em>. Это пример
+<em>«нейтрального, но сильного»</em> вступления к мотивационному письму,
+предложенный мне популярным сейчас чат-ботом DeepSeek. Если представить
+мою мотивацию для поступления на Вашу магистратуру в самом общем и
+упрощенном виде, эта формулировка отлично выполняет свою функцию. Но,
+как любой продукт автоматической генерации контента, она имеет серьезный
+недостаток: отсутствие индивидуальности — ключевого компонента
+человеческой культуры и изучающих ее наук. Уникальный опыт и точка
+зрения человека остаются фундаментом гуманитарных исследований даже в
+эпоху компьютерных методов, поэтому мне как гуманитарию особенно важно
+раскрыть личностный аспект своей мотивации.</p>
+<p>В школьное время мне с одинаковым успехом удавалось изучать
+математику и базовое программирование, с одной стороны, и литературу,
+историю, языки — с другой. Выбирая между IT-направлениями и филологией
+при поступлении в бакалавриат, я остановилась на последней, так как
+чувствовала бо́льшую тягу к работе с текстами. Желание приобрести богатый
+читательский (а следовательно, духовный и культурный) опыт перевесило
+незавидные, в моем представлении, карьерные перспективы филолога. Однако
+вводные курсы по программированию и анализу данных на Python от ВШЭ
+возродили мой интерес к информационным технологиям, а участие в проектах
+с электронными базами данных показало, что в литературоведении тоже есть
+место компьютерам. Открыв для себя сферу DH и NLP, я поняла, что именно
+в этом направлении я смогу синтезировать свои увлечения и обрести
+широкие возможности для академической и профессиональной деятельности. С
+тех пор я изучила основы языка R, прошла интенсивный курс по анализу
+текстовых данных на Python в «Летней школе» и поучаствовала в воркшопе
+по NLP от Центра МАСТ, а сейчас занимаюсь количественным исследованием
+корпуса русских романов для своей ВКР.</p>
+<p>Мне все еще не хватает технической подготовки и практики, но я
+надеюсь, что Ваша программа позволит мне восполнить этот пробел и
+присоединиться к специалистам, развивающим цифровую гуманитаристику в
+России. Существенным преимуществом Вашей магистратуры является для меня
+введение в корпусную и компьютерную лингвистику, поскольку в моей
+бакалаврской программе почти не было курсов по языкознанию и, кроме
+того, разработка и применение языковых моделей сейчас особенно
+востребованы. Мне также было бы интересно познакомиться с цифровыми
+методами в других гуманитарных дисциплинах, особенно в философии.
+Дополнительный плюс — возможность продолжить учебу в уже знакомом и
+полюбившемся мне университете.</p>
+<p>В школе и в бакалавриате я училась почти исключительно на отлично,
+принимала участие в многочисленных олимпиадах, конкурсах и волонтерских
+проектах. Считаю, что мои сильные стороны — это ответственность,
+внимательность и искренняя любовь к познанию. Хотя я предпочитаю
+индивидуальную работу, я умею решать задачи в команде, ценю и стараюсь
+поддерживать дружественные, уважительные отношения в коллективе. В связи
+со всем этим я верю, что смогу стать достойным студентом Вашей
+магистратуры, и надеюсь, что у меня будет возможность это доказать.</p>
+</div>
+</div>
+</div>
+<div id="творческое-задание" class="section level2 section-title">
+<h2 class="section-title">Творческое задание</h2>
+<div class="section">
+<div id="презентация" class="section level3">
+<h3>Презентация</h3>
+<embed src="images/Project_DH.pdf#page=1&pagemode=none&view=FitH" 
+       type="application/pdf" 
+       width="100%" 
+       height="600px"
+       style="border:1px solid #ddd; margin:10px 0; box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1)">
+</div>
+<div id="аннотация-проекта" class="section level3">
+<h3>Аннотация проекта</h3>
+<div class="justified-text">
+<p>Исследование посвящено истории репрезентации мыслей в русской
+литературе и проводится на основе Корпуса русского романа, включающего
+531 текст с 1763 по 1917 гг. Вдохновением послужили работы западных
+DH-специалистов, которые поставили под сомнение идею постепенного
+«поворота нарратива вовнутрь», преобладающую в традиционном
+литературоведении. Поскольку исследователи русской литературы также
+неоднократно отмечали последовательную субъективизацию художественного
+повествования (или развитие психологизма), особенно в эпоху реализма,
+интересно проверить, не было ли в русских романах “отклонений” от
+линейного «поворота вовнутрь».</p>
+<p>Для этой цели я провела анализ частотности глаголов мысли,
+используемых в качестве “маркеров” внутренней речи в текстах, и
+представила общее распределение по десятилетиям в линейных графиках. В
+связи с неравномерным количеством текстов разного времени в корпусе,
+была подсчитана относительная частота глаголов по отдельности, а также в
+условных конструкциях с прямой и косвенной речью (для этого я искала
+шаблоны: глагол мысли в прошедшем времени по соседству с характерными
+пунктуационными знаками или союзом “что”). Вся работа осуществлялась на
+языке Python, с использованием библиотек NLTK, spaCy, pandas и др.</p>
+<p>Полученные на данный момент результаты показывают, что в русской
+литературе «поворот нарратива вовнутрь» тоже не был линейным:</p>
+<ol style="list-style-type: decimal">
+<li><p>Еще в 18 в. авторы активно использовали в романах глаголы мысли в
+конструкциях с косвенной речью — в среднем чаще, чем во все остальные
+периоды;</p></li>
+<li><p>В 1820-х (в романах романтизма) и в 1870-х (в романах “высокого
+реализма”) почему-то произошли небольшие “спады” в использовании
+глаголов мысли;</p></li>
+<li><p>В начале русского модернизма маркированные формы репрезентации
+мыслей оставались популярны (т. е. не были вытеснены новаторскими
+приемами вроде несобственно-прямой речи).</p></li>
+</ol>
+<p>Остается попробовать объяснить эти результаты с помощью научных работ
+по истории русской литературы.</p>
+<p>Исследование можно продолжить, когда Корпус русского романа будет
+завершен и, следовательно, более репрезентативен. Также было бы полезно
+применить более продвинутые методы компьютерного анализа текстов
+(например, машинное обучение) для более точных и интересных
+результатов.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="документальное-подтверждение-позиций-резюме"
+class="section level2 section-title">
+<h2 class="section-title">Документальное подтверждение позиций
+резюме</h2>
+<div class="section">
+<div id="обучение-на-оп-филология-в-вшэ-2021-2025"
+class="section level3">
+<h3>Обучение на ОП «Филология» в ВШЭ (2021-2025)</h3>
+<style>
+.pdf-container {
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1);
+}
+</style>
+<div class="pdf-container">
+<p><embed src="images/Place_of_Study.pdf" width="100%" height="600px"></p>
+</div>
+<p></br></p>
+</div>
+<div id="выписка-с-оценками" class="section level3">
+<h3>Выписка с оценками</h3>
+<style>
+.pdf-container {
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1);
+}
+</style>
+<div class="pdf-container">
+<p><embed src="images/Grade_Book.pdf" width="100%" height="600px"></p>
+</div>
+<p></br></p>
+</div>
+<div
+id="онлайн-курс-введение-в-анализ-данных-на-r-для-гуманитарных-и-социальных-наук"
+class="section level3">
+<h3>Онлайн-курс «Введение в анализ данных на R для гуманитарных и
+социальных наук»</h3>
+<div
+style="margin:20px 0; box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1); border:1px solid #eee; border-radius:5px; overflow:hidden;">
+<object data="images/Intro_R.pdf" type="application/pdf" width="100%" height="600px">
+<embed src="images/Intro_R.pdf" type="application/pdf" width="100%" height="600px">
+<p style="padding:20px; text-align:center;">
+Ваш браузер не поддерживает встроенные PDF.
+<a href="images/Intro_R.pdf" download>Скачать файл</a>.
+</p>
+<p></object></p>
+</div>
+<p></br></p>
+</div>
+<div id="мастерская-анализа-текстовых-данных-в-летней-школе-2024"
+class="section level3">
+<h3>Мастерская анализа текстовых данных в «Летней школе» (2024)</h3>
+<style>
+.pdf-container {
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1);
+}
+</style>
+<div class="pdf-container">
+<p><embed src="images/LSH_TextAn.pdf" width="100%" height="600px"></p>
+</div>
+<p></br></p>
+</div>
+<div
+id="курс-по-английскому-языку-в-royal-language-school-washington-dc-2017"
+class="section level3">
+<h3>Курс по английскому языку в Royal Language School, Washington DC
+(2017)</h3>
+<style>
+.pdf-container {
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1);
+}
+</style>
+<div class="pdf-container">
+<p><embed src="images/RLS_English.pdf" width="100%" height="600px"></p>
+</div>
+<p></br></p>
+</div>
+<div id="курс-по-английскому-языку-в-bootham-school-york-2019"
+class="section level3">
+<h3>Курс по английскому языку в Bootham School, York (2019)</h3>
+<style>
+.pdf-container {
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1);
+}
+</style>
+<div class="pdf-container">
+<p><embed src="images/UKLC_English.pdf" width="100%" height="600px"></p>
+</div>
+<p></br></p>
+</div>
+<div
+id="воркшоп-кино-и-тексты-анализ-сценариев-лауреатов-кинопремий-центр-маст-еуспб-2024"
+class="section level3">
+<h3>Воркшоп «Кино и тексты: анализ сценариев лауреатов кинопремий»,
+Центр МАСТ ЕУСПб (2024)</h3>
+<style>
+.pdf-container {
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1);
+}
+</style>
+<div class="pdf-container">
+<p><embed src="images/MAST_Workshop.pdf" width="100%" height="600px"></p>
+</div>
+<p></br></p>
+</div>
+<div id="конкурс-нирс-2022-филология" class="section level3">
+<h3>Конкурс НИРС-2022 (филология)</h3>
+<style>
+.pdf-container {
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1);
+}
+</style>
+<div class="pdf-container">
+<p><embed src="images/NIRS_Philology.pdf" width="100%" height="600px"></p>
+</div>
+<p></br></p>
+</div>
+<div id="всош-региональный-этап-английский-язык" class="section level3">
+<h3>ВсОШ, региональный этап (английский язык)</h3>
+<style>
+.pdf-container {
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1);
+}
+</style>
+<div class="pdf-container">
+<p><embed src="images/Vseros_Regional_English.pdf" width="100%" height="600px"></p>
+</div>
+<p></br></p>
+</div>
+<div id="олимпиада-высшая-проба-иностранный-язык"
+class="section level3">
+<h3>Олимпиада «Высшая проба» (иностранный язык)</h3>
+<style>
+.pdf-container {
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1);
+}
+</style>
+<div class="pdf-container">
+<p><embed src="images/HSE_Olymp_English.pdf" width="100%" height="600px"></p>
+</div>
+<p></br></p>
+</div>
+<div id="олимпиада-ломоносов-иностранный-язык" class="section level3">
+<h3>Олимпиада «Ломоносов» (иностранный язык)</h3>
+<style>
+.pdf-container {
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1);
+}
+</style>
+<div class="pdf-container">
+<p><embed src="images/Lomonosov_Olymp_English.pdf" width="100%" height="600px"></p>
+</div>
+<p></br></p>
+</div>
+<div id="олимпиада-покори-воробьевы-горы-иностранный-язык"
+class="section level3">
+<h3>Олимпиада «Покори Воробьевы горы!» (иностранный язык)</h3>
+<style>
+.pdf-container {
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1);
+}
+</style>
+<div class="pdf-container">
+<p><embed src="images/PVG_Olymp_English.pdf" width="100%" height="600px"></p>
+</div>
+<p></br></p>
+</div>
+<div id="олимпиада-рггу-иностранный-язык" class="section level3">
+<h3>Олимпиада РГГУ (иностранный язык)</h3>
+<style>
+.pdf-container {
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1);
+}
+</style>
+<div class="pdf-container">
+<p><embed src="images/RSUH_Olymp_English.pdf" width="100%" height="600px"></p>
+</div>
+<p></br></p>
+</div>
+<div id="олимпиада-спбгу-филология" class="section level3">
+<h3>Олимпиада СПбГУ (филология)</h3>
+<style>
+.pdf-container {
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1);
+}
+</style>
+<div class="pdf-container">
+<p><embed src="images/SPBU_Olymp_Philology.pdf" width="100%" height="600px"></p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
