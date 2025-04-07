@@ -16,6 +16,9 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
+```{=html}
+<link href="styles.css" rel="stylesheet">
+```
 
 ```{css, echo=FALSE}
 body {
