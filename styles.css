@@ -1,0 +1,31 @@
+```{css, echo=FALSE}
+body {
+  background-image: linear-gradient(to right, #e6f2fa, #f0f8ff, #c3cfe2); /* Градиент */
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.justified-text {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+.section {
+  padding: 5px 0;
+}
+
+.section-title {
+  color: #2c3e50;
+  padding-bottom: 5px;
+}
+```
+
+```{=html}
+<div style="text-align: right; font-size: 20px; font-style: italic; margin-top: 20px;">
+<em>Демидова Екатерина</em>
+</div>
+```
