@@ -72,7 +72,7 @@ p {
 ### Презентация
 
 ```{=html}
-<embed src="images/Project_DH.pdf#page=1&pagemode=none&view=FitH" 
+<embed src="images/Project.pdf#page=1&pagemode=none&view=FitH" 
        type="application/pdf" 
        width="100%" 
        height="600px"
@@ -82,28 +82,14 @@ p {
 ### Аннотация проекта
 
 <div class="justified-text">
-Исследование посвящено истории репрезентации мыслей в русской литературе и проводится на основе Корпуса русского романа, включающего 531 текст с 1763 по 1917 гг. Вдохновением послужили работы западных DH-специалистов, которые поставили под сомнение идею постепенного «поворота нарратива вовнутрь», преобладающую в традиционном литературоведении. Поскольку исследователи русской литературы также неоднократно отмечали последовательную субъективизацию художественного повествования (или развитие психологизма), особенно в эпоху реализма, интересно проверить, не было ли в русских романах “отклонений” от линейного «поворота вовнутрь».
-
-Для этой цели я провела анализ частотности глаголов мысли, используемых в качестве “маркеров” внутренней речи в текстах, и представила общее распределение по десятилетиям в линейных графиках. В связи с неравномерным количеством текстов разного времени в корпусе, была подсчитана относительная частота глаголов по отдельности, а также в условных конструкциях с прямой и косвенной речью (для этого я искала шаблоны: глагол мысли в прошедшем времени по соседству с характерными пунктуационными знаками или союзом “что”). Вся работа осуществлялась на языке Python, с использованием библиотек NLTK, spaCy, pandas и др.
-
-Полученные на данный момент результаты показывают, что в русской литературе «поворот нарратива вовнутрь» тоже не был линейным:
-
-1.  Еще в 18 в. авторы активно использовали в романах глаголы мысли в конструкциях с косвенной речью — в среднем чаще, чем во все остальные периоды;
-
-2.  В 1820-х (в романах романтизма) и в 1870-х (в романах “высокого реализма”) почему-то произошли небольшие “спады” в использовании глаголов мысли;
-
-3.  В начале русского модернизма маркированные формы репрезентации мыслей оставались популярны (т. е. не были вытеснены новаторскими приемами вроде несобственно-прямой речи).
-
-Остается попробовать объяснить эти результаты с помощью научных работ по истории русской литературы.
-
-Исследование можно продолжить, когда Корпус русского романа будет завершен и, следовательно, более репрезентативен. Также было бы полезно применить более продвинутые методы компьютерного анализа текстов (например, машинное обучение) для более точных и интересных результатов.
+...
 </div>
 </div>
 
 ## Документальное подтверждение позиций резюме {.section-title}
 <div class="section">
 
-### Обучение на ОП «Филология» в ВШЭ (2021-2025)
+### Диплом о базовом образовании
 
 ```{r, results='asis'}
 cat('
@@ -115,26 +101,7 @@ cat('
 </style>
 
 <div class="pdf-container">
-  <embed src="images/Place_of_Study.pdf" width="100%" height="600px">
-</div>
-')
-```
-
-</br>
-
-### Выписка с оценками
-
-```{r, results='asis'}
-cat('
-<style>
-.pdf-container {
-  margin: 20px 0;
-  box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1);
-}
-</style>
-
-<div class="pdf-container">
-  <embed src="images/Grade_Book.pdf" width="100%" height="600px">
+  <embed src="images/Diploma.pdf" width="100%" height="600px">
 </div>
 ')
 ```
@@ -151,6 +118,60 @@ cat('
     <p style="padding:20px; text-align:center;">
       Ваш браузер не поддерживает встроенные PDF. 
       <a href="images/Intro_R.pdf" download>Скачать файл</a>.
+    </p>
+  </object>
+</div>
+')
+```
+
+</br>
+
+### Онлайн-курс «Анализ текстовых данных»
+
+```{r pdf-display, echo=FALSE, results='asis'}
+cat('
+<div style="margin:20px 0; box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1); border:1px solid #eee; border-radius:5px; overflow:hidden;">
+  <object data="images/Intro_R.pdf" type="application/pdf" width="100%" height="600px">
+    <embed src="images/Intro_R.pdf" type="application/pdf" width="100%" height="600px">
+    <p style="padding:20px; text-align:center;">
+      Ваш браузер не поддерживает встроенные PDF. 
+      <a href="images/TextDataAnalysis.pdf" download>Скачать файл</a>.
+    </p>
+  </object>
+</div>
+')
+```
+
+</br>
+
+### Онлайн-курс «Статистика для анализа данных»
+
+```{r pdf-display, echo=FALSE, results='asis'}
+cat('
+<div style="margin:20px 0; box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1); border:1px solid #eee; border-radius:5px; overflow:hidden;">
+  <object data="images/Intro_R.pdf" type="application/pdf" width="100%" height="600px">
+    <embed src="images/Intro_R.pdf" type="application/pdf" width="100%" height="600px">
+    <p style="padding:20px; text-align:center;">
+      Ваш браузер не поддерживает встроенные PDF. 
+      <a href="images/Statistics.pdf" download>Скачать файл</a>.
+    </p>
+  </object>
+</div>
+')
+```
+
+</br>
+
+### Онлайн-курс «Семантика (Московская семантическая школа и близкие теории)»
+
+```{r pdf-display, echo=FALSE, results='asis'}
+cat('
+<div style="margin:20px 0; box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1); border:1px solid #eee; border-radius:5px; overflow:hidden;">
+  <object data="images/Intro_R.pdf" type="application/pdf" width="100%" height="600px">
+    <embed src="images/Intro_R.pdf" type="application/pdf" width="100%" height="600px">
+    <p style="padding:20px; text-align:center;">
+      Ваш браузер не поддерживает встроенные PDF. 
+      <a href="images/Semantics.pdf" download>Скачать файл</a>.
     </p>
   </object>
 </div>
@@ -210,25 +231,6 @@ cat('
 
 <div class="pdf-container">
   <embed src="images/UKLC_English.pdf" width="100%" height="600px">
-</div>
-')
-```
-
-</br>
-
-### Справка о предстоящей публикации в «Метаморфозисе»
-
-```{r, results='asis'}
-cat('
-<style>
-.pdf-container {
-  margin: 20px 0;
-  box-shadow: 0 2px 4px rgba(0.1,0.1,0.1,0.1);
-}
-</style>
-
-<div class="pdf-container">
-  <embed src="images/Publication_Metamorphosis.pdf" width="100%" height="600px">
 </div>
 ')
 ```
